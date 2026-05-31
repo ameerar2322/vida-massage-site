@@ -6,15 +6,11 @@
 <title>Vida Massage · Concept Mockups for Review</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 <style>
-  :root{
-    --primary:#1A3626; --primary-light:#B5C9B3; --gold:#D4B872;
-    --dark:#12221A; --light:#F4F7F4; --gray:#5A6B62;
-  }
+  :root{--primary:#1A3626;--primary-light:#B5C9B3;--gold:#D4B872;--dark:#12221A;--light:#F4F7F4;--gray:#5A6B62;}
   *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
   html,body{height:100%;}
   body{display:flex;flex-direction:column;background:#e7ede9;color:var(--dark);}
 
-  /* Top bar */
   header{background:var(--primary);color:#fff;padding:.7rem 1.2rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;box-shadow:0 2px 10px rgba(0,0,0,.15);z-index:5;}
   .brand{font-size:1.15rem;font-weight:700;display:flex;align-items:center;gap:.5rem;white-space:nowrap;}
   .brand i{color:var(--gold);}
@@ -33,46 +29,41 @@
   .newtab{color:#dfe8e2;font-size:.82rem;text-decoration:none;padding:.5rem .6rem;border-radius:8px;}
   .newtab:hover{background:rgba(255,255,255,.12);color:#fff;}
 
-  /* Reviewer note */
   .note{background:#fbf6ea;color:#6b5a2b;font-size:.82rem;padding:.5rem 1.2rem;border-bottom:1px solid #ecdfbf;text-align:center;}
   .note b{color:#5a4a1f;}
 
-  /* Stage */
   .stage{flex:1;display:flex;justify-content:center;align-items:flex-start;overflow:auto;padding:1.2rem;}
   .frame-wrap{background:#fff;border-radius:14px;box-shadow:0 18px 50px rgba(26,54,38,.22);overflow:hidden;width:100%;max-width:1280px;height:100%;transition:max-width .3s ease;}
   .frame-wrap.mobile{max-width:400px;border-radius:30px;border:8px solid #1d2a23;}
   iframe{width:100%;height:100%;border:none;display:block;background:#fff;}
 
-  @media(max-width:680px){
-    .brand small{display:none;}
-    .controls .newtab{display:none;}
-  }
+  @media(max-width:680px){.brand small{display:none;}.controls .newtab{display:none;}}
 </style>
 </head>
 <body>
   <header>
-    <div class="brand"><i class="fa-solid fa-leaf"></i> Vida Massage <small>concept mockups</small></div>
+    <div class="brand"><i class="fa-solid fa-leaf"></i> Vida Massage <small>practice site concepts</small></div>
     <div class="tabs" id="tabs">
-      <button class="tab active" data-src="mockup-1-practice-serene.html">Serene<span class="kind">Practice</span></button>
-      <button class="tab" data-src="mockup-2-practice-editorial.html">Editorial<span class="kind">Practice</span></button>
-      <button class="tab" data-src="mockup-5-practice-minimal.html">Minimal<span class="kind">Practice</span></button>
-      <button class="tab" data-src="mockup-3-saas-zigzag.html">Zig-Zag<span class="kind">Software</span></button>
-      <button class="tab" data-src="mockup-4-saas-sidebar.html">Sidebar<span class="kind">Software</span></button>
+      <button class="tab active" data-src="v2-1-serene-sidebar.html">Serene Sidebar<span class="kind">Recommended</span></button>
+      <button class="tab" data-src="v2-2-warm-boutique.html">Warm Boutique</button>
+      <button class="tab" data-src="v2-3-editorial-premium.html">Editorial</button>
+      <button class="tab" data-src="v2-5-classic-centered.html">Classic</button>
+      <button class="tab" data-src="v2-4-minimal-booking.html">Minimal<span class="kind">Mobile / link-in-bio</span></button>
     </div>
     <div class="controls">
       <div class="seg" id="seg">
         <button class="active" data-mode="desktop"><i class="fa-solid fa-desktop"></i></button>
         <button data-mode="mobile"><i class="fa-solid fa-mobile-screen"></i></button>
       </div>
-      <a class="newtab" id="newtab" href="mockup-1-practice-serene.html" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Open</a>
+      <a class="newtab" id="newtab" href="v2-1-serene-sidebar.html" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Open</a>
     </div>
   </header>
 
-  <div class="note">Hi Vivian! Tap the buttons above to flip between five design directions. <b>Serene / Editorial / Minimal</b> are for your studio site; <b>Zig-Zag / Sidebar</b> are for the software idea. Use the screen icons to preview mobile.</div>
+  <div class="note">Hi Vivian! Five directions for your studio site, all inspired by the sites you liked. <b>Serene Sidebar</b> is our top pick. <b>Minimal</b> is a phone-friendly page for your Instagram link. Use the screen icons to preview mobile.</div>
 
   <div class="stage">
     <div class="frame-wrap" id="wrap">
-      <iframe id="viewer" src="mockup-1-practice-serene.html" title="Mockup preview"></iframe>
+      <iframe id="viewer" src="v2-1-serene-sidebar.html" title="Mockup preview"></iframe>
     </div>
   </div>
 
@@ -81,15 +72,12 @@
     const viewer = document.getElementById('viewer');
     const newtab = document.getElementById('newtab');
     const wrap = document.getElementById('wrap');
-
     tabs.forEach(t => t.addEventListener('click', () => {
       tabs.forEach(x => x.classList.remove('active'));
       t.classList.add('active');
       const src = t.getAttribute('data-src');
-      viewer.src = src;
-      newtab.href = src;
+      viewer.src = src; newtab.href = src;
     }));
-
     document.querySelectorAll('#seg button').forEach(b => b.addEventListener('click', () => {
       document.querySelectorAll('#seg button').forEach(x => x.classList.remove('active'));
       b.classList.add('active');

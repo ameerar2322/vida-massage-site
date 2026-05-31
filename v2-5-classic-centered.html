@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vida Massage | Therapeutic Massage in Berwyn, PA</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<style>
+  :root{--primary:#1A3626;--primary-light:#B5C9B3;--gold:#D4B872;--dark:#12221A;--light:#F4F7F4;--gray:#5A6B62;}
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
+  html{scroll-behavior:smooth;}
+  body{color:var(--dark);line-height:1.7;}
+  h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:500;color:var(--primary);}
+  a{text-decoration:none;color:inherit;}
+  .btn{display:inline-block;padding:.85rem 2rem;border-radius:6px;font-weight:600;cursor:pointer;transition:.3s;}
+  .btn-primary{background:var(--primary);color:#fff;}
+  .btn-primary:hover{background:#0f1f15;transform:translateY(-2px);}
+  .btn-gold{background:var(--gold);color:var(--primary);}
+  .btn-gold:hover{background:#c5a85f;transform:translateY(-2px);}
+  .btn-outline{border:1.5px solid var(--primary);color:var(--primary);}
+
+  nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 6%;position:sticky;top:0;background:#fff;box-shadow:0 2px 10px rgba(26,54,38,.06);z-index:50;}
+  .logo{font-family:Georgia,serif;font-size:1.6rem;color:var(--primary);display:flex;align-items:center;gap:.5rem;}
+  .logo i{color:var(--gold);}
+  .nav-links{display:flex;gap:2rem;list-style:none;font-weight:500;}
+  .nav-links a:hover{color:var(--gold);}
+
+  .hero{text-align:center;padding:5rem 6%;background:linear-gradient(to bottom,var(--light),#fff);}
+  .hero .eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:.75rem;color:var(--gold);margin-bottom:1rem;}
+  .hero h1{font-size:3.4rem;line-height:1.15;max-width:720px;margin:0 auto 1.2rem;}
+  .hero p{color:var(--gray);font-size:1.15rem;max-width:540px;margin:0 auto 2rem;}
+  .hero-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+  .hero-img{max-width:960px;margin:3rem auto 0;border-radius:14px;overflow:hidden;box-shadow:0 25px 55px rgba(26,54,38,.18);}
+  .hero-img img{width:100%;display:block;}
+
+  section{padding:5rem 6%;}
+  .center{text-align:center;max-width:600px;margin:0 auto 3rem;}
+  .center .eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:.75rem;color:var(--gold);}
+  .center h2{font-size:2.4rem;margin:.5rem 0 .8rem;}
+  .center p{color:var(--gray);}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;max-width:1050px;margin:0 auto;}
+  .card{background:#fff;border:1px solid #e6ece8;border-radius:14px;padding:2.2rem 1.8rem;text-align:center;transition:.25s;}
+  .card:hover{transform:translateY(-5px);border-color:var(--primary-light);box-shadow:0 12px 28px rgba(26,54,38,.08);}
+  .card .ic{font-size:2rem;color:var(--primary-light);margin-bottom:1rem;}
+  .card h3{font-size:1.25rem;margin-bottom:.3rem;}
+  .card .pr{color:var(--gold);font-weight:700;font-family:Georgia,serif;margin-bottom:.6rem;}
+  .card p{color:var(--gray);font-size:.9rem;}
+
+  .quote{background:var(--light);text-align:center;}
+  .quote i.q{color:var(--gold);font-size:1.8rem;margin-bottom:1rem;}
+  .quote blockquote{font-family:Georgia,serif;font-size:1.6rem;max-width:720px;margin:0 auto 1rem;color:var(--primary);line-height:1.5;}
+  .quote .who{color:var(--gray);letter-spacing:1px;}
+  .stars{color:var(--gold);margin-bottom:1rem;}
+
+  .book{text-align:center;background:var(--primary);color:#fff;}
+  .book h2{color:#fff;font-size:2.6rem;margin-bottom:1rem;}
+  .book p{color:var(--primary-light);max-width:480px;margin:0 auto 2rem;}
+  .info{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;margin-top:3rem;color:var(--primary-light);font-size:.92rem;}
+  .info i{color:var(--gold);margin-right:.4rem;}
+
+  footer{background:var(--dark);color:#A0B0A6;text-align:center;padding:2.5rem 6%;font-size:.85rem;}
+  footer .socials{display:flex;justify-content:center;gap:1.3rem;font-size:1.2rem;margin-bottom:1rem;}
+  footer .socials a{color:var(--primary-light);}
+  @media(max-width:768px){.nav-links{display:none;}.hero h1{font-size:2.4rem;}}
+</style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><i class="fa-solid fa-leaf"></i> Vida Massage</div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#book">Contact</a></li>
+    </ul>
+    <!-- TODO: ClinicSense booking URL -->
+    <a href="#book" class="btn btn-primary" style="padding:.6rem 1.4rem;">Book Now</a>
+  </nav>
+
+  <header class="hero">
+    <div class="eyebrow">Berwyn, PA &middot; Main Line</div>
+    <h1>Therapeutic massage, tailored to your body.</h1>
+    <p>Personalized deep tissue, Swedish, and recovery bodywork in a calm, private studio. Less stress, less pain, more ease.</p>
+    <div class="hero-cta">
+      <!-- TODO: ClinicSense booking URL -->
+      <a href="#" class="btn btn-gold">Book a Session</a>
+      <a href="#services" class="btn btn-outline">View Services</a>
+    </div>
+    <div class="hero-img"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1400&q=80" alt="Serene massage studio"></div>
+  </header>
+
+  <section id="services">
+    <div class="center"><div class="eyebrow">Services</div><h2>Bodywork that meets you where you are</h2><p>Every session is customized after a brief check-in about how you're feeling.</p></div>
+    <div class="grid">
+      <div class="card"><div class="ic"><i class="fa-solid fa-feather"></i></div><h3>Swedish</h3><div class="pr">$95 · 60 min</div><p>Flowing, gentle pressure to ease tension.</p></div>
+      <div class="card"><div class="ic"><i class="fa-solid fa-hand-fist"></i></div><h3>Deep Tissue</h3><div class="pr">$110 · 60 min</div><p>Focused work for chronic tightness and knots.</p></div>
+      <div class="card"><div class="ic"><i class="fa-solid fa-hand-holding-heart"></i></div><h3>Prenatal</h3><div class="pr">$105 · 60 min</div><p>Safe, supported relief through pregnancy.</p></div>
+      <div class="card"><div class="ic"><i class="fa-solid fa-clock"></i></div><h3>Extended</h3><div class="pr">$150 · 90 min</div><p>A full 90 minutes at an unhurried pace.</p></div>
+    </div>
+  </section>
+
+  <section class="quote" id="reviews">
+    <i class="fa-solid fa-quote-left q"></i>
+    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+    <blockquote>"The most attentive massage I've had on the Main Line. I leave every session feeling like I have a new body."</blockquote>
+    <div class="who">— Sarah J., Berwyn</div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="center" style="margin-bottom:1.5rem;"><div class="eyebrow">Booking</div><h2 style="color:#fff;">Ready when you are</h2></div>
+    <p>Online booking is open 24/7. Pick a time that works and you'll get an instant confirmation.</p>
+    <!-- TODO: ClinicSense booking URL -->
+    <a href="#" class="btn btn-gold">Book Online</a>
+    <div class="info">
+      <div><i class="fa-solid fa-location-dot"></i>552 E Lancaster Ave, Suite 4A, Berwyn, PA 19312</div>
+      <div><i class="fa-solid fa-phone"></i>610-314-0674</div>
+      <div><i class="fa-solid fa-clock"></i>Tue–Sat, 9am–7pm</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-yelp"></i></a>
+      <a href="mailto:vidamassageworks@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    &copy; 2026 Vida Massage LLC &middot; vidamassageworks@gmail.com &middot; 610-314-0674
+  </footer>
+</body>
+</html>
