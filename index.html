@@ -41,7 +41,9 @@
 
   /* Approach */
   .approach{background:var(--light);}
-  .approach-wrap{display:flex;gap:3.5rem;align-items:center;flex-wrap:wrap;max-width:1050px;margin:0 auto;}
+  .approach-wrap{display:flex;gap:3.5rem;align-items:flex-start;flex-wrap:wrap;max-width:1050px;margin:0 auto;}
+  .approach .tx .modality-list{margin:1rem 0;}
+  .approach .tx .modality-list li{color:var(--dark);}
   .approach img{flex:1;min-width:280px;max-width:420px;border-radius:14px;box-shadow:0 18px 45px rgba(26,54,38,.15);}
   .approach .tx{flex:1.2;min-width:300px;}
   .approach .eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:.75rem;color:var(--gold);}
@@ -94,7 +96,6 @@
     <div class="logo"><i class="fa-solid fa-leaf"></i> Vida Massage</div>
     <ul class="nav-links">
       <li><a href="#approach">My Approach</a></li>
-      <li><a href="#modalities">Services</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#book">Book</a></li>
     </ul>
@@ -120,30 +121,17 @@
       <div class="tx">
         <div class="eyebrow">My Approach</div>
         <h2>Hi, I'm Vivian.</h2>
-        <p>I believe that no two bodies are the same, which means no two massage sessions should be either. My practice is rooted in providing an intuitive, personalized bodywork experience designed to give your body exactly what it needs in the moment.</p>
+        <p>All bodies are unique, and so are our sessions. My practice is rooted in providing an intuitive, personalized bodywork experience designed to give your body exactly what it needs in the moment.</p>
         <p>Rather than following a rigid routine, I listen to your muscles and adapt my technique in real-time. Each custom session blends the best of multiple modalities to achieve both deep relief and profound relaxation.</p>
+        <p>My toolkit includes a seamless blend of:</p>
+        <ul class="modality-list">
+          <li><strong>Deep Tissue Massage:</strong> To target stubborn, chronic tension and release tight muscle layers.</li>
+          <li><strong>Soothing Swedish Massage:</strong> To calm the nervous system, improve circulation, and promote overall bliss.</li>
+          <li><strong>Myofascial Trigger Point Release:</strong> To pinpoint and alleviate specific areas of pain and referred discomfort.</li>
+        </ul>
+        <p>Whether you are looking to recover from chronic pain, melt away stress, or simply reconnect with your body, I am here to facilitate your healing journey. Let's work together to restore your balance.</p>
       </div>
     </div>
-  </section>
-
-  <section id="modalities">
-    <div class="center" style="max-width:760px;">
-      <div class="eyebrow">Services</div>
-      <h2>A custom blend of modalities</h2>
-    </div>
-    <div class="modality-copy">
-      <p>My toolkit includes a seamless blend of:</p>
-      <ul class="modality-list">
-        <li><strong>Deep Tissue Massage:</strong> To target stubborn, chronic tension and release tight muscle layers.</li>
-        <li><strong>Soothing Swedish Massage:</strong> To calm the nervous system, improve circulation, and promote overall bliss.</li>
-        <li><strong>Myofascial Trigger Point Release:</strong> To pinpoint and alleviate specific areas of pain and referred discomfort.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="quote">
-    <i class="fa-solid fa-quote-left q"></i>
-    <blockquote>Whether you are looking to recover from chronic pain, melt away stress, or simply reconnect with your body, I am here to facilitate your healing journey. Let's work together to restore your balance.</blockquote>
   </section>
 
   <section class="pricing" id="pricing">
